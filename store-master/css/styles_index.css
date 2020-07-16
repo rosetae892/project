@@ -1,0 +1,767 @@
+html
+{
+  overflow-x: hidden;
+}
+
+body
+{
+  margin: 0;
+  background-color: #fafafa;
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+a
+{
+  color: black;
+  text-decoration: none;
+}
+
+.wrapper
+{
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.back_top
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.back_bottom
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow: visible;
+}
+
+.body_content
+{
+  width: 100%;
+  margin: 25% auto 20% auto;
+}
+
+.logo_icon
+{
+  float: left;
+}
+
+.sidenav
+{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fafafa;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+
+.sidenav a
+{
+  font-size: 1em;
+  font-weight: 700;
+  padding: 8px 8px 8px 30px;
+  display: block;
+  text-transform: uppercase;
+  transition: color 0.5s;
+}
+
+.sidenav a:hover
+{
+  color: #9D3017;
+  transition: color 0.5s;
+}
+
+.sidenav
+{
+  display: none;
+}
+
+.nav_back
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.navbar_cover
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(250, 250, 250, 0.5);
+  z-index: 1000;
+  transition: top 0.5s;
+}
+
+.navbar
+{
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+  z-index: 1000;
+}
+
+.active, .current
+{
+  color: #9D3017;
+}
+
+.logo
+{
+	position: absolute;
+}
+
+.ephemera
+{
+  letter-spacing: 4px;
+	font-family: 'Six Caps', sans-serif;
+	font-size: 2.2em;
+}
+
+.studios
+{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.1em;
+	letter-spacing: 5px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.flex_icons
+{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.icon
+{
+  margin-left: 60px;
+  transition: color 0.5s;
+}
+
+.close img
+{
+  width: 25px;
+  height: 25px;
+  margin-bottom: 30px;
+}
+
+.flex_icons .menu
+{
+  display: none;
+}
+
+.flex_icons .icon img
+{
+  width: 25px;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.flex_icons .icon:hover
+{
+  cursor: pointer;
+  color: #9D3017;
+  transition: color 0.5s;
+}
+
+.introduction
+{
+  width: 90%;
+  margin: auto;
+}
+
+.intro
+{
+  width: 60%;
+  transition: 0.5s;
+}
+
+.intro p
+{
+  font-size: 3em;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.intro a
+{
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 15px;
+  border-radius: 10px;
+  border: 3px solid black;
+  transition: 0.5s;
+}
+
+.intro a:hover
+{
+  color: #9D3017;
+  border: 3px solid #9D3017;
+  transition: 0.5s;
+}
+
+.products
+{
+  margin-top: 25%;
+  transition: 0.5s;
+}
+
+.products .heading
+{
+  font-weight: 700;
+  font-size: 3em;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.products .image
+{
+  border-radius: 20px;
+  width: 450px;
+  height: 450px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+.products img
+{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.category_paper, .category_journal, .category_paperless
+{
+  font-size: 1.8em;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.paper, .paperless, .journal
+{
+  border-radius: 20px;
+  margin: 30px;
+  width: 450px;
+  height: 450px;
+  background-color: #F5E6E2;
+  transition: 0.5s;
+}
+
+.paper p, .paperless p, .journal p
+{
+  color: #9D3017;
+  padding: 10px 30px 10px 30px;
+  text-align: left;
+  font-size: 0.7em;
+  transition: 0.5s;
+}
+
+.paper a, .paperless a, .journal a
+{
+  font-size: 0.8em;
+  font-weight: 700;
+  transition: color 0.5s;
+}
+
+.paper a:hover, .paperless a:hover, .journal a:hover
+{
+  color: #9D3017;
+  transition: color 0.5s;
+}
+
+.products .subheading
+{
+  font-size: 1.3em;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.product_link
+{
+  margin-top: 250px;
+  transition: 0.5s;
+}
+
+.footer
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 0.7em;
+  width: 90%;
+  margin: 10% auto 3% auto;
+}
+
+.footer-links ul
+{
+  list-style: none;
+}
+
+.footer-links ul li
+{
+  list-style: none;
+  display: inline;
+  padding-right: 15px;
+}
+
+.footer-links ul li a
+{
+  letter-spacing: 1px;
+  transition: color .5s;
+}
+
+.footer-links ul li a:hover
+{
+  color: #9D3017;
+  transition: color .5s;
+}
+
+.footer-payment
+{
+  padding-top: 10px;
+  padding-left: 10%;
+}
+
+@keyframes smoothload
+{
+  from
+  {
+    opacity: 0;
+  }
+  to
+  {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1019px)
+{
+  .products .image
+  {
+    width: 350px;
+    height: 350px;
+    transition: 0.5s;
+  }
+
+  .paper, .paperless, .journal
+  {
+    width: 350px;
+    height: 350px;
+  }
+
+  .product_link
+  {
+    margin-top: 150px;
+    transition: 0.5s;
+  }
+}
+@media only screen and (max-width: 845px)
+{
+  .intro
+  {
+    width: 75%;
+    transition: 0.5s;
+  }
+
+  .products
+  {
+    margin-top: 35%;
+  }
+}
+
+@media only screen and (max-width: 819px)
+{
+  .products .image
+  {
+    width: 300px;
+    height: 300px;
+    transition: 0.5s;
+  }
+
+  .paper .product_link
+  {
+    margin-top: 55px;
+    transition: 0.5s;
+  }
+
+  .journal .product_link
+  {
+    margin-top: 105px;
+    transition: 0.5s;
+  }
+
+  .paperless .product_link
+  {
+    margin-top: 50px;
+    transition: 0.5s;
+  }
+
+  .paper, .paperless, .journal
+  {
+    width: 300px;
+    height: 300px;
+    transition: 0.5s;
+  }
+
+  .body_content
+  {
+    margin-top: 35%;
+    transition: 0.5s;
+  }
+
+  .intro
+  {
+    width: 70%;
+    transition: 0.5s;
+  }
+
+  .intro p
+  {
+    font-size: 2.7em;
+    font-weight: 700;
+    transition: 0.5s;
+  }
+
+  .intro a
+  {
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 12px;
+    border-radius: 10px;
+    border: 3px solid black;
+    transition: 0.5s;
+  }
+}
+
+@media only screen and (max-width: 800px) and (orientation: landscape)
+{
+  .navbar_cover
+  {
+    height: 35%;
+    transition: 0.5s;
+  }
+}
+
+@media only screen and (max-width: 719px)
+{
+  .flex_icons .home, .flex_icons .shop, .flex_icons .person, .flex_icons .faq,
+  .flex_icons .cart
+  {
+    display: none;
+  }
+
+  .flex_icons .menu
+  {
+    display: block;
+  }
+
+  .sidenav
+  {
+    display: block;
+  }
+
+  .products
+  {
+    text-align: center;
+    margin: 50% auto 0 auto;
+  }
+
+  .paper, .paperless, .journal
+  {
+    width: 500px;
+    height: 200px;
+  }
+
+  .paper, .paperless
+  {
+    margin-top: 0;
+  }
+
+  .category_paper .image, .category_paperless .image
+  {
+    margin-bottom: 0;
+  }
+
+  .paper .product_link, .journal .product_link, .paperless .product_link
+  {
+    margin-top: 0;
+  }
+
+  .paper .subheading, .journal .subheading, .paperless .subheading
+  {
+    margin-bottom: 0;
+  }
+
+  .journal
+  {
+    margin-bottom: 0;
+  }
+
+  .category_journal .image
+  {
+    margin-top: 0;
+  }
+
+  .products .image
+  {
+    width: 500px;
+    height: 500px;
+    transition: 0.5s;
+  }
+}
+
+@media only screen and (max-width: 638px)
+{
+  .intro
+  {
+    padding-top: 10%;
+    width: 80%;
+    transition: 0.5s;
+  }
+
+  .intro p
+  {
+    font-size: 2.5em;
+    font-weight: 700;
+    transition: 0.5s;
+  }
+
+  .intro a
+  {
+    font-size: 1em;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid black;
+    transition: 0.5s;
+  }
+}
+
+@media only screen and (max-width: 559px)
+{
+  .products
+  {
+    margin-top: 60%;
+  }
+
+  .paper ,.paperless, .journal
+  {
+    width: 450px;
+  }
+
+  .products .image
+  {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape)
+{
+  .navbar_cover
+  {
+    height: 32%;
+    transition: 0.5s;
+  }
+}
+
+@media only screen and (max-width: 510px)
+{
+  .products .heading
+  {
+    font-size: 2.7em;
+    transition: 0.5s;
+  }
+
+  .products
+  {
+    margin-top: 60%;
+  }
+
+  .paper ,.paperless, .journal
+  {
+    width: 400px;
+  }
+
+  .products .image
+  {
+    width: 400px;
+    height: 400px;
+  }
+
+  .intro
+  {
+    padding-top: 15%;
+    width: 90%;
+    transition: 0.5s;
+  }
+
+  .intro p
+  {
+    font-size: 2.5em;
+    font-weight: 700;
+    transition: 0.5s;
+  }
+
+  .intro a
+  {
+    font-size: 1em;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid black;
+    transition: 0.5s;
+  }
+
+  .navbar_cover
+  {
+    height: 24%;
+    transition: 0.5s;
+  }
+}
+
+@media only screen and (max-width: 461px)
+{
+  .paper ,.paperless, .journal
+  {
+    width: 350px;
+  }
+
+  .navbar_cover
+  {
+    height: 24%;
+    transition: 0.5s;
+  }
+
+  .products .image
+  {
+    width: 350px;
+    height: 350px;
+  }
+
+  .products .heading
+  {
+    font-size: 2.4em;
+    transition: 0.5s;
+  }
+}
+
+@media only screen and (max-width: 409px)
+{
+  .paper ,.paperless, .journal
+  {
+    width: 250px;
+  }
+
+  .products .image
+  {
+    width: 250px;
+    height: 250px;
+  }
+
+  .products .heading
+  {
+    font-size: 2.4em;
+    transition: 0.5s;
+  }
+
+  .intro p
+  {
+    font-size: 2.3em;
+    margin-top: 20%;
+  }
+
+  .paper, .journal
+  {
+    height: 160px;
+  }
+
+  .paperless
+  {
+    height: 200px;
+  }
+
+  .paper .subheading, .paperless .subheading, .journal .subheading
+  {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 309px)
+{
+  .paper ,.paperless, .journal
+  {
+    width: 240px;
+  }
+
+  .products .image
+  {
+    width: 240px;
+    height: 240px;
+  }
+
+  .products .heading
+  {
+    margin-top: 100%;
+    font-size: 2.2em;
+    transition: 0.5s;
+  }
+
+  .intro p
+  {
+    font-size: 1.8em;
+    margin-top: 40%;
+  }
+
+  .paper, .journal
+  {
+    height: 160px;
+  }
+
+  .paperless
+  {
+    height: 200px;
+  }
+
+  .paper .subheading, .paperless .subheading, .journal .subheading
+  {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 700px) and (orientation: landscape)
+{
+  .navbar_cover
+  {
+    height: 28%;
+    transition: 0.5s;
+  }
+}
